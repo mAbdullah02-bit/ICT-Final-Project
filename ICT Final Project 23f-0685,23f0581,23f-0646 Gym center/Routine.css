@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    color: #fff;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+h1 {
+    color: #ff0000;
+    position: relative;
+    display: inline-block;       /*to make it cover text only*/
+    cursor:pointer;
+    font-size:36px;
+  }
+  
+  h1::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px; /* underline thickness */
+    background-color: #ff0000;
+    transition: width 1.0s; 
+  }
+  
+  h1:hover::after {
+    width: 100%;
+  }
+  
+  
+
+h2{
+    color:#ff0000;
+    text-align:center;
+} 
+h3 {
+    color: darkgrey; 
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #a70000;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+
